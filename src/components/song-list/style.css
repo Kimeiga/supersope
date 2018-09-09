@@ -36,7 +36,3 @@ header nav a, header nav p {
 } */
 
 
-header nav a:hover,
-header nav a:active {
-	font-style: italic;
-}
