@@ -1,0 +1,14 @@
+.song {
+	grid-area: song;
+
+	padding: 1rem;
+
+	background: url('./laminto-1.jpg');
+	background-size: cover;
+	color: black;
+	overflow-y: scroll;
+}
+
+.song p, .song a {
+	font-weight: 900;
+}

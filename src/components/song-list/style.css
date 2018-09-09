@@ -1,0 +1,42 @@
+header {
+	padding: 1rem;
+	grid-area: song-list;
+/* 
+	background: url("./laminto-1.jpg");
+	font-style: italic;
+	-web
+	background-attachment: fixed;
+	height: 100%;
+	background-size: cover;
+
+	overflow-y: scroll;
+	background: url('./laminto-1.jpg');
+	background-size: cover;
+	color: white !important;*/
+	overflow-y: scroll;
+
+	
+	
+}
+
+header nav a, header nav p {
+	/* color: transparent;  */
+	/* background: url(./laminto-1.jpg) fixed center center no-repeat !important;
+  background-size: cover;
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+	color: white;
+}
+
+/* header nav a {
+	margin: 2rem 0;
+	font-size: 10vw;
+	font-weight: 900;
+	letter-spacing: -2vw;
+} */
+
+
+header nav a:hover,
+header nav a:active {
+	font-style: italic;
+}

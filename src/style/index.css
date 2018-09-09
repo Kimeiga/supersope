@@ -1,0 +1,174 @@
+/*
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #FAFAFA;
+	font-family: 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	height: 100%;
+}
+*/
+@import url('https://fonts.googleapis.com/css?family=Chivo:300,400,700,900&subset=latin-ext');
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+:root{
+	--text: #EB6896;
+	--bg: rgb(0, 26, 23);
+}
+
+body {
+	background: var(--bg);
+	margin: 0;
+}
+
+#app {
+	background: var(--bg);
+	height: 100vh;
+	color: white;
+}
+
+body {	
+	font-family: 'Chivo', sans-serif;
+	/* overflow-x: hidden; */
+}
+
+#app {
+	display: grid;
+	grid-template-areas: "song-list song";
+	grid-template-columns: 50vw 50vw;
+}
+
+
+h1 {
+	margin: 1rem 0;
+	font-size: 10vw;
+	font-weight: 900;
+	letter-spacing: -1vw;
+}
+
+h2 {
+	margin: 1rem 0;
+	font-size: 7vw;
+	font-weight: 900;
+	letter-spacing: -0.8vw;
+}
+
+h3 {
+	margin: 1rem 0;
+	font-size: 4vw;
+	font-weight: 800;
+	letter-spacing: -0.4vw;
+}
+
+p, a {
+	
+	/* color: var(--text); */
+	margin: 1rem 0;
+	letter-spacing: -0.2vw;
+	font-weight: 300;
+	font-size: 3vw;
+}
+
+a {
+	background: var(--text);
+	color: white;
+	text-decoration: none;
+
+}
+
+a:hover, a:active, button:hover {
+	font-style: italic;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: var(--text); 
+}
+
+button, input[type="submit"], input[type="reset"] {
+	/* background: none; */
+	/* color: #000000; */
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
+@media screen and (orientation:portrait) {
+	#app {
+		grid-template-areas: "song-list" "song";
+		grid-template-columns: 1fr;
+		grid-template-rows: 50vh 50vh;
+	}
+	
+	h1{
+		margin-bottom: 1rem;
+		font-size: 18vw;
+		font-weight: 900;
+		letter-spacing: -1vw;
+	}
+
+	h2 {
+		margin: 1rem 0;
+		font-size: 14vw;
+		font-weight: 900;
+		letter-spacing: -0.8vw;
+	}
+		
+	h3 {
+		margin: 1rem 0;
+		font-size: 8vw;
+		font-weight: 800;
+		letter-spacing: -0.4vw;
+	}
+
+	p, a {
+		
+		/* color: var(--text); */
+		margin: 1rem 0;
+		letter-spacing: -0.2vw;
+		font-weight: 300;
+		font-size: 6vw;
+	}
+
+	a {
+		background: var(--text);
+		/* color: white; */
+	}
+}
