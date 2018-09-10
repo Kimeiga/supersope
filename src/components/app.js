@@ -5,7 +5,6 @@ import SongList from './song-list';
 
 // Code-splitting is automated for routes
 import Home from '../routes/home';
-import Profile from '../routes/profile';
 import Song from '../routes/song';
 import Song2 from '../routes/song-2';
 
@@ -38,7 +37,7 @@ export default class App extends Component {
 			<div id="app">
 				<SongList />
 				<Router onChange={this.handleRoute}>
-					<Home path="/" />
+					<Home path="/"></Home>
 					<Song path="/yeah-thats-right"></Song>
 					<Song2 path="/wrap-it"></Song2>
 					{/* <Profile path="/profile/" user="me" />
